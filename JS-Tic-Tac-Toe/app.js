@@ -1,4 +1,6 @@
+// characters not working
 // https://dev.to/bornasepic/pure-and-simple-tic-tac-toe-with-javascript-4pgn
+
 
 // 1) Store game status
 const statusDisplay = document.querySelector('.game-status')

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    color: #f1f4f8;
+}
+
+:root{
+    /* primary/main color */
+    --clr-primary-5: #f1f4f8;
+    --white: #ede3f6;
+    --black: #2e212e;
+}
+
+body{
+    background-color: #f1f4f8;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+}
+
+nav{
+    background-color: #22222255;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: 0;
+    box-shadow: 1 1 #333;
+}
+
+.nav-center{
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links li, 
+.nav-links a{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.nav-links a:hover{
+    font-weight: bold;
+}
+
+.nav-center h4,
+.nav-center .nav-links{
+    margin: 0% 6%;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #22222233;
+    padding: 30px 60px;
+    border-radius: 1rem;
+}
+
+.color {
+    color: var(--clr-primary-5);
+}
+
+.btn-hero {
+    text-transform: uppercase;
+    background: var(--black);
+    color: var(--white);
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    margin-top: 30px;
+}
+
+.btn-hero:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+
+@media screen and (max-width: 700px) {
+    h4{ 
+        font-size: 2.4rem;
+    }   
+    .nav-center{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin: 30px 0px;
+        gap: 50px;
+    }
+}
